@@ -4,9 +4,9 @@ services:
     image: postgres:16
     user: root
     environment:
-      - POSTGRES_USER=odoo
+      - POSTGRES_USER=odoo17
       - POSTGRES_PASSWORD=odoo17@2023
-      - POSTGRES_DB=postgres
+      - POSTGRES_DB=postgres17
     restart: always             # run as a service
     volumes:
         - ./postgresql:/var/lib/postgresql/data
